@@ -25,3 +25,8 @@ SELECT *, CONCAT(FirstName, ' ' ,LastName) AS FullName FROM Sales.Customers
 SELECT (CONCAT(TRIM(FirstName), TRIM(LastName))) AS username, LEN(CONCAT(FirstName,LastName)) AS len_name, UPPER(Country) AS country_upper FROM Sales.Customers;
 
 
+SELECT CONCAT(TRIM(FirstName), ' ', TRIM(LastName)) AS Name, Country, UPPER(LEFT(Country,3)) AS CountryCode FROM Sales.Customers;
+SELECT UPPER(SUBSTRING(Country, 1, 3)) AS CountryCode, Country FROM Sales.Customers;
+SELECT * FROM Sales.Customers;
+SELECT SUBSTRING(FirstName, 2, LEN(FirstName)) AS NewName FROM Sales.Customers;
+                                                                                                                                    
