@@ -29,4 +29,4 @@ SELECT CONCAT(TRIM(FirstName), ' ', TRIM(LastName)) AS Name, Country, UPPER(LEFT
 SELECT UPPER(SUBSTRING(Country, 1, 3)) AS CountryCode, Country FROM Sales.Customers;
 SELECT * FROM Sales.Customers;
 SELECT SUBSTRING(FirstName, 2, LEN(FirstName)) AS NewName FROM Sales.Customers;
-                                                                                                                                    
+                                                                                                                                                                                            
